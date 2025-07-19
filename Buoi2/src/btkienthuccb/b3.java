@@ -1,7 +1,7 @@
+package btkienthuccb;
+
 import java.util.Scanner;
-//Bài tập: Viết chương trình nhập 2 số nguyên và thực hiện các phép toán: cộng, trừ,
-//nhân, chia, chia lấy dư. Sau đó kiểm tra xem 2 số đó có bằng nhau không sau đó
-//in ra màn hình.(kiểm tra tối thiểu là 5 cặp)
+
 public class b3 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);

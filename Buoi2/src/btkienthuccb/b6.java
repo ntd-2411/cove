@@ -1,3 +1,5 @@
+package btkienthuccb;
+
 import java.util.Scanner;
 
 public class b6 {
