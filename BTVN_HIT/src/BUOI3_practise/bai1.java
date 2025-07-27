@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 
 public class Bai1 {
-    public static void fil(){
-        final String SQUARE = "1";
-        final String TRANGLE = "2";
-        final String CIRCLE = "3";
-    }
+
+    final String SQUARE = "1";
+    final String TRANGLE = "2";
+    final String CIRCLE = "3";
+
     //tuong tu tham chieu trong c++, gan gia tri x vao sc roi truyen tham so trong ham main
     public static int nhap(Scanner sc){
         int x;
