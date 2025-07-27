@@ -1,12 +1,8 @@
 package BUOI3_practise;
-//a, b: trong [0, 100]
-//        c: trong [0, 200]
-//        Hiển thị phép toán: a + b = c
-//        Người dùng trả lời vào “Correct” hoặc “Incorrect” ->  int ra thông báo “Bạn đã trời đúng “ nếu đúng ngược lại thì thông báo ““Bạn đã trời đúng Sai “
 
 import java.util.Scanner;
 
-public class bai3 {
+public class Bai3 {
     public static int nhap1(Scanner sc){
         int x;
         do{

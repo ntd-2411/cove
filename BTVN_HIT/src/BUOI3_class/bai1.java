@@ -2,7 +2,7 @@ package BUOI3_class;
 
 import java.util.Scanner;
 
-public class bai1 {
+public class Bai1 {
     public static boolean check(int x){
         if(x < 2) return false;
         else{
@@ -31,27 +31,27 @@ public class bai1 {
             System.out.print(a[i] + " ");
         }System.out.println();
         //tong cac so chan
-        int demchan = 0; int tong = 0;
+        int demChan = 0; int tong = 0;
         for(int i = 0; i < n; i++){
             if(a[i] % 2 == 0){
-                demchan++;
+                demChan++;
                 tong += a[i];
             }
-        }System.out.println("co "+ demchan + " phan tu chan " +
+        }System.out.println("co "+ demChan + " phan tu chan " +
                 "va tong cua chung = "+ tong);
         //tong cac so le
-        int demle = 0; int tongle = 0;
+        int demLe = 0; int tongLe = 0;
         for(int i = 0; i < n; i++){
             if(a[i] % 2 != 0){
-                demle++;
-                tongle += a[i];
+                demLe++;
+                tongLe += a[i];
             }
-        }System.out.println("co "+ demle + " phan tu chan " +
-                "va tong cua chung = "+ tongle);
+        }System.out.println("co "+ demLe + " phan tu chan " +
+                "va tong cua chung = "+ tongLe);
         //so luong snt
-        int demnt = 0;
+        int demNT = 0;
         for(int i = 0; i < n; i++){
-            if(check(a[i])) demnt++;
-        }System.out.print("co " + demnt + " so nguyen to trong mang");
+            if(check(a[i])) demNT++;
+        }System.out.print("co " + demNT + " so nguyen to trong mang");
     }
 }

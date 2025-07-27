@@ -3,7 +3,7 @@ package BUOI3_practise;
 import java.util.Scanner;
 
 
-public class bai1 {
+public class Bai1 {
     public static void fil(){
         final String SQUARE = "1";
         final String TRANGLE = "2";
@@ -55,9 +55,9 @@ public class bai1 {
         if(type.equalsIgnoreCase("1")){
             System.out.print("S = " + dientichhinhvuong(sc));
         }else if(type.equalsIgnoreCase("2")){
-            System.out.print("S = " + String.format("%.2f",dientichhinhtamgiac(sc)));
+            System.out.print("S = " + (Math.round(dientichhinhtamgiac(sc)*1000))/1000.0);
         }else if(type.equalsIgnoreCase("3")){
-            System.out.print("S = " + String.format("%.2f",dientichhinhtron(sc)));
+            System.out.print("S = " + (Math.round(dientichhinhtron(sc)*1000))/1000.0);
         }
     }
 }

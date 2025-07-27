@@ -1,8 +1,8 @@
 package BUOI3_class;
-//        Tính và in tổng các phần tử trên 2 đường chéo chính và phụ
+
 import java.util.Scanner;
 
-public class bai5 {
+public class Bai5 {
     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
         int n;
@@ -14,41 +14,41 @@ public class bai5 {
         }while(n <= 0);
         int[][] a = new int[n][n];
         int value = 1;
-        int trenxuong = 0; int duoilen = n - 1;
-        int traisang = 0; int phaisang = n - 1;
-        for(int i = traisang; i <= phaisang; i++){
-            a[trenxuong][i] = value;
+        int trenXuong = 0; int duoiLen = n - 1;
+        int traiSang = 0; int phaiSang = n - 1;
+        for(int i = traiSang; i <= phaiSang; i++){
+            a[trenXuong][i] = value;
             value++;
-        }trenxuong++;
+        }trenXuong++;
         for(int j = 0; j < n; j++){
-            for(int i = trenxuong; i <= duoilen; i++){
-                a[i][phaisang] = value;
+            for(int i = trenXuong; i <= duoiLen; i++){
+                a[i][phaiSang] = value;
                 value++;
-            }phaisang--;
-            for(int i = phaisang; i >= traisang; i--){
-                a[duoilen][i] = value;
+            }phaiSang--;
+            for(int i = phaiSang; i >= traiSang; i--){
+                a[duoiLen][i] = value;
                 value++;
-            }duoilen--;
-            for(int i = duoilen; i >= trenxuong; i--){
-                a[i][traisang] = value;
+            }duoiLen--;
+            for(int i = duoiLen; i >= trenXuong; i--){
+                a[i][traiSang] = value;
                 value++;
-            }traisang++;
+            }traiSang++;
         }for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
                 System.out.print(a[i][j] + " ");
             }System.out.println();
         }System.out.println();
-        int tongching = 0; int tongphu = 0;
+        int tongChing = 0; int tongPhu = 0;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                if(i == j) tongching += a[i][j];
+                if(i == j) tongChing += a[i][j];
             }
         }for(int i = 0; i < n;){
             for(int j = n -1; j >= 0; j--){
-                tongphu += a[i][j];
+                tongPhu += a[i][j];
                 i++;
             }
-        }System.out.println("tong cac phan tu tren duong cheo ching = " + tongching);
-        System.out.println("tong cac phan tu tren duong cheo phu = " + tongphu);
+        }System.out.println("tong cac phan tu tren duong cheo ching = " + tongChing);
+        System.out.println("tong cac phan tu tren duong cheo phu = " + tongPhu);
     }
 }

@@ -2,7 +2,7 @@ package BUOI3_class;
 
 import java.util.Scanner;
 
-public class bai2 {
+public class Bai2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         final double PI = 3.14159265;
@@ -14,10 +14,10 @@ public class bai2 {
             System.out.print("nhap mu k: ");
             k = sc.nextInt();
         }while(r <= 0);
-        System.out.println("chu vi hinh tron: C = " + String.format("%.2f",2.0 * PI * r));
-        System.out.println("dien tich hinh tron: S = " + String.format("%.2f",PI * r * r));
-        System.out.println("r^k = " + String.format("%.2f",Math.pow(r, k)));
-        System.out.println("(r + k)^1/2 = " + String.format("%.2f",Math.sqrt(r + k)));
-        System.out.print("|r - k| = " + String.format("%.2f",Math.abs(r - k)));
+        System.out.println("chu vi hinh tron: C = " + Math.round(2.0 * PI * r * 1000) / 1000.0);
+        System.out.println("dien tich hinh tron: S = " + Math.round(PI * r * r * 1000) / 1000.0);
+        System.out.println("r^k = " + Math.round(Math.pow(r, k) * 1000) / 1000.0);
+        System.out.println("(r + k)^1/2 = " + Math.round(Math.sqrt(r + k) * 1000) / 1000.0);
+        System.out.print("|r - k| = " + Math.round(Math.abs(r - k) * 1000) / 1000.0);
     }
 }

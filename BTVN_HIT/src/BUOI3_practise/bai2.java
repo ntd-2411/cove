@@ -2,7 +2,7 @@ package BUOI3_practise;
 
 import java.util.Scanner;
 
-public class bai2 {
+public class Bai2 {
     public static boolean check(String s){
         int left = 0; int right = s.length() - 1;
         while(left < right){

@@ -2,7 +2,7 @@ package BUOI3_class;
 
 import java.util.Scanner;
 
-public class bai4 {
+public class Bai4 {
     public static int F(int n){
         if(n == 0) return 0;
         else if(n == 1) return 1;
