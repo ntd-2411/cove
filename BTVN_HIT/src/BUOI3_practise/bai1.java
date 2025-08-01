@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class Bai1 {
 
-    final String SQUARE = "1";
-    final String TRANGLE = "2";
-    final String CIRCLE = "3";
+    static final String SQUARE = "1";
+    static final String TRANGLE = "2";
+    static final String CIRCLE = "3";
 
     //tuong tu tham chieu trong c++, gan gia tri x vao sc roi truyen tham so trong ham main
     public static int nhap(Scanner sc){
@@ -21,17 +21,17 @@ public class Bai1 {
     }
     //so sanh 2 chuoi
     public static void check(String type){
-        if(type.equalsIgnoreCase("1")) System.out.println("Ban chon hinh vuong");
-        else if (type.equalsIgnoreCase("2")) System.out.println("Ban chon hinh tam giac");
-        else if (type.equalsIgnoreCase("3")) System.out.println("Ban chon hinh tron");
+        if(type.equalsIgnoreCase(SQUARE)) System.out.println("Ban chon hinh vuong");
+        else if (type.equalsIgnoreCase(TRANGLE)) System.out.println("Ban chon hinh tam giac");
+        else if (type.equalsIgnoreCase( CIRCLE)) System.out.println("Ban chon hinh tron");
         else System.out.println("Hinh dang khong hop le");
     }
-    public static int dientichhinhvuong(Scanner sc){
+    public static int dienTichHinhVuong(Scanner sc){
         System.out.print("nhap chieu dai canh: ");
         int a = sc.nextInt();
         return a*a;
     }
-    public static double dientichhinhtamgiac(Scanner sc){
+    public static double dienTichHinhTamGiac(Scanner sc){
         System.out.print("lan luot nhap chieu 3 canh: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
@@ -39,7 +39,7 @@ public class Bai1 {
         double p = 1.0*(a + b + c) * 0.5;
         return Math.sqrt(p*(p - a)*(p - b)*(p - c));
     }
-    public static double dientichhinhtron(Scanner sc){
+    public static double dienTichHinhTron(Scanner sc){
         final double PI = 3.14159265;
         System.out.print("nhap ban kinh: ");
         int r = sc.nextInt();
@@ -53,11 +53,11 @@ public class Bai1 {
         String type = Integer.toString(a);
         check(type);
         if(type.equalsIgnoreCase("1")){
-            System.out.print("S = " + dientichhinhvuong(sc));
+            System.out.print("S = " + dienTichHinhVuong(sc));
         }else if(type.equalsIgnoreCase("2")){
-            System.out.print("S = " + (Math.round(dientichhinhtamgiac(sc)*1000))/1000.0);
+            System.out.print("S = " + (Math.round(dienTichHinhTamGiac(sc)*1000))/1000.0);
         }else if(type.equalsIgnoreCase("3")){
-            System.out.print("S = " + (Math.round(dientichhinhtron(sc)*1000))/1000.0);
+            System.out.print("S = " + (Math.round(dienTichHinhTron(sc)*1000))/1000.0);
         }
     }
 }
